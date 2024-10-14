@@ -1,18 +1,3 @@
-# Flutterbank
+# App Flutterbank
 
-## Projeto em Flutter
-
-- Comando para criação: `flutter create <nome-do-projeto>`
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Trabalhando com estilos e widgets
