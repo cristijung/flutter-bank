@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbank/components/box_card.dart';
 import 'package:flutterbank/components/sections/header.dart';
 
 class Home extends StatelessWidget {
@@ -10,6 +11,9 @@ class Home extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Header(),
+          BoxCard(
+            boxContent: Text('Oi flor!'),
+          ),
         ],
       ),
     );
