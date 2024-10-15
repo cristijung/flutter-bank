@@ -10,7 +10,7 @@ class BoxCard extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
+            color: Colors.black.withOpacity(0.9), //verificar aqui depois
             spreadRadius: 2,
             blurRadius: 5,
             offset: const Offset(0, 3),
@@ -18,10 +18,10 @@ class BoxCard extends StatelessWidget {
         ],
       ),
       child: ClipRRect( // ClipRRect para aplicar o borderRadius
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(8),
         child: Container( //container interno com padding e conteúdo
           padding: const EdgeInsets.all(16),
-          color: Colors.white,
+          color: Theme.of(context).cardColor,
           child: boxContent,
         ),
       ),

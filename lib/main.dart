@@ -10,9 +10,11 @@ class Flutterbank extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'FlutterBank',
-      home: Home(),
+      theme: ThemeData.dark(),
+      home: const Home(),
     );
+    
   }
 }
