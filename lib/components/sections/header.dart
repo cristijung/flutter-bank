@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../themes/theme_colors.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -10,11 +11,7 @@ class Header extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: <Color>[
-            Color.fromRGBO(103, 99, 234, 1.0),
-            Color.fromRGBO(155, 105, 234, 1.0),
-            Color.fromRGBO(195, 107, 255, 1.0),
-          ],
+          colors: ThemeColors.headerGradient,
         ),
         borderRadius: BorderRadius.vertical(
           bottom: Radius.circular(10),
@@ -32,7 +29,6 @@ class Header extends StatelessWidget {
                     //estilizando os textos de forma separada
                     TextSpan(
                       text: '\$',
-                      style: TextStyle(fontSize: 16),
                       children: <TextSpan>[
                         TextSpan(
                           text: '1000.00',
@@ -44,7 +40,6 @@ class Header extends StatelessWidget {
                   ),
                   Text(
                     'Saldo disponível',
-                    style: TextStyle(fontSize: 16),
                   ),
                 ],
               ),
