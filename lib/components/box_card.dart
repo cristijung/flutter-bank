@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class BoxCard extends StatelessWidget {
@@ -7,21 +6,25 @@ class BoxCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
+    return Container( //container externo com boxShadow
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 2,
             blurRadius: 5,
-            offset: const Offset(0, 3), // changes position of shadow
+            offset: const Offset(0, 3),
           ),
         ],
       ),
-      child: boxContent,
+      child: ClipRRect( // ClipRRect para aplicar o borderRadius
+        borderRadius: BorderRadius.circular(10),
+        child: Container( //container interno com padding e conteúdo
+          padding: const EdgeInsets.all(16),
+          color: Colors.white,
+          child: boxContent,
+        ),
+      ),
     );
   }
 }
-
-
