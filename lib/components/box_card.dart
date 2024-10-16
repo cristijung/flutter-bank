@@ -10,7 +10,7 @@ class BoxCard extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5), //verificar aqui depois
+            color: Colors.black.withOpacity(0.5), //verificar aqui depois
             spreadRadius: 2,
             blurRadius: 5,
             offset: const Offset(0, 3),
