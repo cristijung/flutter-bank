@@ -22,8 +22,8 @@ class AccountActions extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               InkWell( //cria uma área clicável
-                onTap: (){},  //função vazia de toque para depois colocar a funcionalidade
-                child: BoxCard(
+                onTap: (){},  //função vazia de toque para depois colocar a functionalism
+                child: const BoxCard(
                   boxContent: _AccountActionContent(
                     icon: Icon(Icons.account_balance_wallet),
                     text: 'Depositar',

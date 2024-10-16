@@ -9,8 +9,8 @@ class RecentActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16),
+    return const Padding(
+      padding: EdgeInsets.all(16),
       child: BoxCard(
         boxContent: _RecenteActivityContent(),
       ),
@@ -20,7 +20,7 @@ class RecentActivity extends StatelessWidget {
 
 //classe privada stateless
 class _RecenteActivityContent extends StatelessWidget {
-  const _RecenteActivityContent({super.key});
+  const _RecenteActivityContent();
 
   @override
   Widget build(BuildContext context) {
