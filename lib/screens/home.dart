@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterbank/components/box_card.dart';
 import 'package:flutterbank/components/sections/header.dart';
+import 'package:flutterbank/components/sections/recent_activity.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -11,9 +11,7 @@ class Home extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Header(),
-          BoxCard(
-            boxContent: Text('Oi flor!'),
-          ),
+          RecentActivity(),
         ],
       ),
     );
