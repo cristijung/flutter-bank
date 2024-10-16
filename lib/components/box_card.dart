@@ -6,7 +6,7 @@ class BoxCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container( //container externo com boxShadow
+    return Ink( //mesmo comportamento q o container, porém prepara o widget filho para área clicável
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -19,7 +19,7 @@ class BoxCard extends StatelessWidget {
       ),
       child: ClipRRect( // ClipRRect para aplicar o borderRadius
         borderRadius: BorderRadius.circular(8),
-        child: Container( //container interno com padding e conteúdo
+        child: Ink( //Ink interno com padding e conteúdo
           padding: const EdgeInsets.all(16),
           color: Theme.of(context).cardColor,
           child: boxContent,
