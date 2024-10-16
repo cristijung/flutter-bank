@@ -34,7 +34,7 @@ class Header extends StatelessWidget {
                           text: '1000.00',
                           style: TextStyle(
                               fontSize: 28, fontWeight: FontWeight.bold),
-                        ),
+                        ''),
                       ],
                     ),
                   ),
